@@ -571,11 +571,11 @@ sl:
   label_search: Išči
   label_result_plural: Rezultati
   label_all_words: Vse besede
-  label_wiki: Wiki
-  label_wiki_edit: Wiki urejanje
-  label_wiki_edit_plural: Wiki urejanja
-  label_wiki_page: Wiki stran
-  label_wiki_page_plural: Wiki strani
+  label_wiki: Predstavitev
+  label_wiki_edit: Uredi stran
+  label_wiki_edit_plural: Uredi strani
+  label_wiki_page: Predstavitvena stran
+  label_wiki_page_plural: Predstavitvene strani
   label_index_by_title: Razvrsti po naslovu
   label_index_by_date: Razvrsti po datumu
   label_current_version: Trenutna verzija
@@ -738,7 +738,7 @@ sl:
   text_issues_ref_in_commit_messages: Zahtevki sklicev in popravkov v sporočilu predaje
   text_issue_added: "Zahtevek %{id} je sporočil(a) %{author}."
   text_issue_updated: "Zahtevek %{id} je posodobil(a) %{author}."
-  text_wiki_destroy_confirmation: Ali ste prepričani da želite izbrisati ta wiki in vso njegovo vsebino?
+  text_wiki_destroy_confirmation: Ali ste prepričani da želite izbrisati to wiki stran in vso njeno vsebino?
   text_issue_category_destroy_question: "Nekateri zahtevki (%{count}) so dodeljeni tej kategoriji. Kaj želite storiti?"
   text_issue_category_destroy_assignments: Odstrani naloge v kategoriji
   text_issue_category_reassign_to: Ponovno dodeli zahtevke tej kategoriji
