@@ -74,6 +74,7 @@ module ApplicationHelper
     if options[:subject] == false
       title = truncate(issue.subject, :length => 60)
     else
+      text << ": " if options[:tracker]
       subject = issue.subject
       if options[:truncate]
         subject = truncate(subject, :length => options[:truncate])
