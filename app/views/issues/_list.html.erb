@@ -1,6 +1,8 @@
 <%= form_tag({}) do -%>
 <%= hidden_field_tag 'back_url', url_for(params), :id => nil %>
 <div class="autoscroll">
+<%= link_to l(:label_issue_new), { :project_id => @project, :controller => 'issues',:action => 'new', :copy_from => nil }, :class => 'icon icon-add', 
+:style => 'float: right;', :accesskey => accesskey(:new_issue) if @project && User.current.allowed_to?(:add_issues, @project) %>
 <table class="list issues">
   <thead>
     <tr>

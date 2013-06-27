@@ -68,7 +68,7 @@ module IssuesHelper
       s << '<div>' + content_tag('p', link_to_issue(ancestor, :project => (issue.project_id != ancestor.project_id)))
     end
     s << '<div>'
-    subject = h(issue.subject)
+    subject =  issue_heading(issue) + ": " + h(issue.subject)
     if issue.is_private?
       subject = content_tag('span', l(:field_is_private), :class => 'private') + ' ' + subject
     end

@@ -1,3 +1,10 @@
+<h3><%= l(:label_project) %></h3>
+<%= link_to l(:label_activity), { :controller => 'activities', :action => 'index', :id => @project } %><br/>
+<%= link_to l(:label_overview), { :controller => 'projects', :action => 'show', :id => @project }  %><br/>
+<% if @project %>
+<% link_to l(:label_roadmap), { :controller => 'versions', :action => 'index' }, 
+            :id => @project  if @project.shared_versions.any? %>
+<% end %>
 <h3><%= l(:label_issue_plural) %></h3>
 <%= link_to l(:label_issue_view_all), _project_issues_path(@project, :set_filter => 1) %><br />
 <% if @project %>
