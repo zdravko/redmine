@@ -185,7 +185,8 @@ module Redmine
           item.url
         end
         caption = item.caption(project)
-        return [caption, url, (current_menu_item == item.name)]
+#        return [caption, url, (current_menu_item == item.name)]
+        return [caption, url, (request.path.split("/").include?(item.name.to_s))]
       end
 
       # Checks if a user is allowed to access the menu item by:
